@@ -1,0 +1,18 @@
+
+button:not(:disabled){
+    cursor: pointer;
+}
+
+.nevbar-toggler-icon{
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+      background-repeat-x: no-repeat;
+      background-repeat-y: no-repeat;
+    background-position: center;
+       background-position-x: center;
+       background-position-y: center; 
+    background-size: 100%;
+}
