@@ -1,5 +1,10 @@
-.btn-default{
+.btn-default {
     background-color: rgb(173, 250, 173);
     color: green;
     border-radius: 15px;
+}
+
+.active-card {
+    background-color: rgb(5, 5, 44);
+    color: white;
 }
