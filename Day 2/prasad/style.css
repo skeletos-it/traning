@@ -8,4 +8,7 @@
     margin-bottom: 50px;
 }
 
-/* .card-body{ */
+.active-card{
+    background-color: #192841;
+    color: white;
+}
