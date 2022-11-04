@@ -8,6 +8,11 @@
     margin-bottom: 50px;
 }
 
-/* .card{
-    background-color: red ;
-} */
+.active-card{
+    background-color: #192841;
+    color: white;
+}
+
+.size{
+    margin-left: 90px;
+}
