@@ -13,12 +13,180 @@
       crossorigin="anonymous"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+
     <link rel="stylesheet" href="style.css" />
 
     <title>Day 3</title>
   </head>
   <body>
     <!-- Start -->
+
+    <!-- sidebar -->
+    <div class="row">
+      <div class="sidebar col-md-2">
+        <div class="logo mb-3 mx-2">Clever</div>
+        <div class="ul mx-2" style="list-style-type: none">
+          <li class="my-2"><i class="fa-solid fa-house"></i>Dashboard</li>
+          <li class="my-2"><i class="fa-solid fa-signal"></i>Analytics</li>
+          <li class="d-flex justify-content-between my-2">
+            <span><i class="fa-solid fa-comment"></i>Messages</span>
+            <span class="badge rounded-pill bg-primary">6</span>
+          </li>
+          <li class="my-2">
+            <i class="fa-regular fa-chart-tree-map"></i>
+            Collections
+          </li>
+          <li class="my-2"><i class="fa-solid fa-users"></i>Users</li>
+          <li class="mt-5"><i class="fa-solid fa-gear"></i>Setting</li>
+          <li class="my-2"><i class="fa-solid fa-bell"></i>Notification</li>
+        </div>
+      </div>
+
+      <!-- nevbar -->
+      <div class="col-md-10">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><b>Security Setting</b></a>
+            </div>
+            <a href="#" class="btn btn-light mx-2">Edit</a>
+            <a href="#" class="btn btn-primary mx-2 my-2 me-3">+Create</a>
+          </nav>
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Overview</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Users</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Setting</a>
+            </li>
+          </ul>
+          <!-- card -->
+          <section>
+            <div class="row">
+              <div class="col-md-8">
+                <div class="card mx-2 my-3" style="width: 45rem">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-10 d-flex flex-column">
+                        <h5 class="card-title">Two-factor Authentication</h5>
+
+                        <h6 class="card-subtitle mb-2 text-muted">
+                          Lorem ipsum dolor sit omet, consectetur adipiscing
+                          elit. Commodo pellentesque massa <br />tellus ac
+                          augue.
+                        </h6>
+                      </div>
+                      <div class="col-2 d-flex align-items-center">
+                        <a href="#" class="right btn btn-primary mx-2 my-2"
+                          >Enable</a
+                        >
+                      </div>
+                    </div>
+                    <hr />
+                    <div class="row">
+                      <div class="col-10 d-flex flex-column">
+                        <h5 class="card-title">Authentication app</h5>
+
+                        <h6 class="card-subtitle mb-2 text-muted">
+                          Google auth app
+                        </h6>
+                      </div>
+                      <div class="col-2 d-flex align-items-center">
+                        <a href="#" class="right btn btn-light mx-2 my-2"
+                          >Setup</a
+                        >
+                      </div>
+                    </div>
+                    <hr />
+                    <div class="row">
+                      <div class="col-10 d-flex flex-column">
+                        <h5 class="card-title">Another e-mail</h5>
+
+                        <h6 class="card-subtitle mb-2 text-muted">
+                          E-mail to send verification link.
+                        </h6>
+                      </div>
+                      <div class="col-2 d-flex align-items-center">
+                        <a href="#" class="right btn btn-light mx-2 my-2"
+                          >Setup</a
+                        >
+                      </div>
+                    </div>
+                    <hr />
+                    <div class="row">
+                      <div class="col-10 d-flex flex-column">
+                        <h5 class="card-title">SMS Recovery</h5>
+
+                        <h6 class="card-subtitle mb-2 text-muted">
+                          Your phone number of something.
+                        </h6>
+                      </div>
+                      <div class="col-2 d-flex align-items-center">
+                        <a href="#" class="right btn btn-light mx-2 my-2"
+                          >Setup</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <br />
+                <div class="card mx-2 my-3" style="width: 45rem">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-7 d-flex flex-column">
+                        <h5 class="card-title">Password</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Quasi expedita molestiae non esse nostrum eum
+                          dolorum animi corporis porro. Accusamus impedit
+                          quaerat quia consequuntur explicabo nobis. Labore
+                          natus cum quisquam.
+                        </h6>
+                        <br />
+                        <h5>Current password</h5>
+                        <input
+                          class="form-control me-2"
+                          type="current password"
+                          placeholder="password"
+                          aria-label="password"
+                        />
+                      </div>
+                      <div class="col-5 d-flex align-items-center">
+                        <div class="card bg-primary" style="width: 18rem">
+                          <div class="card-body">
+                            <h5 class="card-title my-2">Rules for Passwords</h5>
+                            <h6 class="card-subtitle mb-2 my-2">
+                              To create a new Password, you have to meet all of
+                              the following requirments:
+                            </h6>
+                            <ul>
+                              <li>Minimum 8 character</li>
+                              <li>at least ine special character</li>
+                              <li>at least one number</li>
+                              <li>can't be the same as a previous</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">bar</div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
 
     <!-- End -->
 
