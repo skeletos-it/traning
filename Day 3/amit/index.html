@@ -13,13 +13,276 @@
       crossorigin="anonymous"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link rel="stylesheet" href="style.css" />
 
     <title>Day 3</title>
   </head>
-  <body>
+  <body >
     <!-- Start -->
+    <div class="row bg-light">
+      <div class="sidebar col-md-2">
+        <div class="logo">
+          <i class="fa-solid fa-bolt-lightning mx-2"></i>Clever
+        </div>
+        <div class="ul mx-2 my-4">
+          <li>
+            <i class="fa-solid fa-house"></i>
+            Dashboard
+          </li>
+          <li>
+            <i class="fa-solid fa-chart-simple my-3"></i>         
+               Analytics
+          </li>
+          <li class="d-flex justify-content-between">
+            <span>
+              <i class="fa-solid fa-comment"></i>
+              Messages
+            </span>
+            <span class="badge rounded-pill bg-primary">6</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-comment my-3"></i>
+            Collections
+          </li>
+          <li>
+            <i class="fa-solid fa-user my-1"></i>          
+              Users
+          </li>
+        </br>
+          <li>
+            <i class="fa-solid fa-gear"></i>          
+              Settings
+          </li>
+          <li class="d-flex justify-content-between">
+            <span>
+              <i class="fa-solid fa-bell my-2"></i>
+                            Notifications
+            </span>
+            <span class="badge rounded-pill bg- text-dark">23</span>
+          </li>
+        </div>
+      </div>
+      <div class="main-section col-md-10">
 
+        <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"><b>Security Setting</b></a>          
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              </ul>
+             
+              <button type="button" class="btn btn-light text-dark">Edit</button>
+              <button type="button" class="btn btn-primary text-dark">+Create</button>
+
+            </div>
+          </div>
+        </nav>
+
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Overview</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Users</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Setting</a>
+          </li>
+        </ul>
+
+
+        <div class="row">
+          <div class="col-md-8">
+
+            <div class="card">
+              <div class="card-body ">
+                <div class="row">
+
+                  <hr>
+                
+                  <div class="col-md-10 d-flex flex-column">
+                <h4 class="card-title">Two Factor Authentication</h4>
+                <h6 class="card-subtitle mb-2 text-muted">Lorem ipsum dolor sit amet,Commodo pellentesque mass<br>tellus ac auge </h6>
+             </div>
+             <div class="col-2 d-flex align-items-center">
+              <a href="#" class="right btn btn-primary mx-2 my-2">Enable</a>
+
+             </div>
+             <hr>
+
+
+<!--              <div class="card" style="width: 45">
+ -->              <div class="card-body ">
+                <div class="row">
+                  <div class="col-md-10 d-flex flex-column">
+                <h4 class="card-title">Authentication App</h4>
+                <h6 class="card-subtitle mb-2 text-muted">Google auth app </h6>
+             </div>
+             <div class="col-2 d-flex align-items-center">
+              <a href="#" class="right btn btn-light text-dark mx-2 my-2">setup</a>
+             </div>
+             <hr>
+
+<!--              <div class="card" style="width: 45">
+ -->              <div class="card-body ">
+                <div class="row">
+                  <div class="col-md-10 d-flex flex-column">
+                <h4 class="card-title">Another Email</h4>
+                <h6 class="card-subtitle mb-2 text-muted">E-mail to send verification link </h6>
+             </div>
+             <div class="col-2 d-flex align-items-center">
+              <a href="#" class="right btn btn-light text-dark mx-2 my-2">setup</a>
+             </div>
+             <hr>
+             
+<!--              <div class="card" style="width:35">
+ -->              <div class="card-body ">
+                <div class="row">
+                  <div class="col-md-10 d-flex flex-column">
+                <h4 class="card-title">Sms recovery</h4>
+                <h6 class="card-subtitle mb-2 text-muted">Your phone number or something </h6>
+             </div>
+             <div class="col-2 d-flex align-items-center">
+              <a href="#" class="right btn btn-light text-dark mx-2 my-2"> setup</a>
+             </div>
+              </div>
+            </div>
+            <hr>
+
+<br>
+<br>
+
+<div class="card mx-2 my-3" style="width: 45rem">
+  <div class="card-body">
+    <div class="row">
+      <div class="col-7 d-flex flex-column">
+        <h5 class="card-title">Password</h5>
+        <h6 class="card-subtitle mb-2 text-muted">
+          Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Quasi expedita molestiae non esse nostrum eum
+          dolorum animi corporis porro. Accusamus impedit
+          quaerat quia consequuntur explicabo nobis. Labore
+          natus cum quisquam.
+        </h6>
+        <br />
+        <h5>Current password</h5>
+        <input
+          class="form-control me-2"
+          type="current password"
+          placeholder="password"
+          aria-label="password"
+        />
+
+        <h5>Current password</h5>
+        <input
+          class="form-control me-2"
+          type="New password"
+          placeholder="NewPassword"
+          aria-label="password"
+        />
+        <h5>Current password</h5>
+        <input
+          class="form-control me-2"
+          type="conform password"
+          placeholder="ConformPassword"
+          aria-label="password"
+        />
+      </div>
+
+      <div class="col-5 d-flex align-items-center">
+        <div class="card bg-light" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title my-2">Rules for Passwords</h5>
+            <h6 class="card-subtitle mb-2 my-2">
+              To create a new Password, you have to meet all of
+              the following requirments:
+            </h6>
+            <ul>
+              <li>Minimum 8 character</li>
+              <li>at least ine special character</li>
+              <li>at least one number</li>
+              <li>can't be the same as a previous</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div></div>
+
+      <!--       <div class="card my-4">
+              <ul class="list-group list-group-flush>
+                <li class="list-group-item" ><b>Two Factor Authentication</b><br><br>Lorem ipsum dolor sit amet,Commodo pellentesque mass<br>tellus ac auge </li>
+                
+                <li class="list-group-item"><b>Authentication App</b><br><span>Google auth app</span></li>
+                <li class="list-group-item"><b>Another Email</b><br>E-mail to send verification link</li>
+                <li class="list-group-item"><b>Sms recovery</b><br>Your phone number or something</li>
+
+              </ul> -->
+
+<!-- sidebar 2 -->
+
+<div class="col-md-4 width="45">
+  <div class="card">
+    <div class="card-body">
+      <i class="fa-solid fa-laptop text-danger"></i>
+      <h5 class="card-title py-3"><b>Devices</b></h5>
+      <h6 class="card-subtitle mb-2 text-muted"> Lorem ipoifb sit amet ,kjsuyfbdfty,bfsu <br>
+        commofo pellentsque massa leets ac augur.</h6>
+      <br>
+      <button type="button " class="btn btn-primary ">Sign out from all device</button><br>
+      <hr>
+      <div class="ul" style="list-style-type:none;">
+        <li>
+          <i class="fa-sharp fa-solid fa-mobile-screen-button "></i> iphone 11<p>London ,UK,Oct 23 at 1:23<i class="fa-solid fa-ellipsis-vertical mx-4"></i></p>
+        </li>
+        <hr>
+        <li>
+          <i class="fa-solid fa-laptop"></i> Macbook Pro<p>London ,UK,Oct 23 at 1:23<i class="fa-solid fa-ellipsis-vertical mx-4"></i></p>
+
+        </li>
+        <hr>
+        <li>
+          <i class="fa-sharp fa-solid fa-mobile-screen-button"></i>iphone SE<p>London ,UK,Oct 23 at 1:23<i class="fa-solid fa-ellipsis-vertical mx-4"></i></p>
+
+        </li>
+        <hr>
+        <li>
+          <i class="fa-sharp fa-solid fa-mobile-screen-button"></i> iphone 11<p>London ,UK,Oct 23 at 1:23<i class="fa-solid fa-ellipsis-vertical mx-4"></i></p>
+
+        </li>
+        <hr>
+
+
+      </div>
+
+
+
+    </div>
+  </div>
+
+
+</div>
+
+          <!-- sidebar 2 End -->
+          
+        </div>
+      </div>
+    </div>
     <!-- End -->
 
     <script
