@@ -1,31 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="stylesheet" href="style.css" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 
-    <title>Day 3</title>
-  </head>
-  <body>
-    <!-- Start -->
+  <link rel="stylesheet" href="style.css" />
 
-    <!-- End -->
+  <title>Day 3</title>
+  <style>
+    .btn {
+      background-color: rgb(13, 13, 78);
+      color: white
+    }
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    .container {
+      background-color: #DCDCDC;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Start -->
+
+  <!--main container-->
+  <div class="container d-flex align-items-center justify-content-center ">
+    <div class=" col-6 d-flex align-items-center justify-content-center flex-column">
+      <!-- <div class="col-6 flex-column d-flex justify-content-center border"> -->
+      <h2> Expenses Tracker</h2>
+
+      <h4><img class="img-fluid" src="../anushka/185-1850441_apple-calculator-icon-ios-11-hd-png-download.png" alt=""
+          srcset="" width="50px" height="50px"> Balance</h4>
+      <h5 id="balance"> $420</h5>
+      <div class=" card">
+
+        <div class="card-body row">
+          <div class=" col-6 d-flex align-items-center justify-content-center flex-column">income
+            <p id="money-plus" class="money plus"></p>
+          </div>
+          <div class=" col-6 d-flex align-items-center justify-content-center flex-column">Expenses
+            <p id="money-minus" class="money minus"></p>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-6 text-start py-0 ">
+        <h5>History</h4>
+          <hr />
+      </div>
+      <!--histroy list-->
+      <ul id="list" class="list">
+        <li class="_minus">
+          cash <span> -$200</span>
+        </li>
+      </ul>
+      <br>
+      <div class="col-6 text-start py-0 ">
+        <!--new transaction-->
+        <h4> Add new Transaction</h4>
+        <hr />
+      </div>
+      <form>
+        <div class="col-6 text-start py-0 ">
+          <h6> Descripation</h6>
+        </div>
+        <input class="form-control Descripation w-50" type="text" placeholder="Enter Descripation"
+          id="Descripation" /><br>
+        <div class="col-6 text-start py-0 ">
+          <h6> Amount</h6>
+          <P class="text-muted">(-100=expenses, 100=income)</P>
+        </div>
+        <input class="form-control Amount w-50" type="text" placeholder="Enter Amount" id='amount' /><br>
+        <button type="button" class="btn w-50 " id="addButtton" onclick="addEntry()">Add Transaction</button>
+
+
+    </div>
+    </form>
+    <!-- <div> -->
+
+    <!-- </div> -->
+  </div>
+
+
+
+  </div>
+
+  <!-- End -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+
+
+    </script>
+  <script src="main.js"></script>
+</body>
+
 </html>
