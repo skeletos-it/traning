@@ -16,11 +16,39 @@
   <style>
     .btn {
       background-color: rgb(13, 13, 78);
-      color: white
+      color: white;
+      width: 400px;
     }
 
     .container {
       background-color: #DCDCDC;
+    }
+
+    .money.plus {
+      color: #2ecc71;
+    }
+
+    .money.minus {
+      color: #c0392b;
+    }
+
+
+    .list li {
+      background-color: #fff;
+      color: #333;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      padding: 10px;
+      margin: 10px 0;
+    }
+
+    .list .plus {
+      border-right: 5px solid #2ecc71;
+    }
+
+    .list .minus {
+      border-right: 5px solid #c0392b;
     }
   </style>
 </head>
@@ -33,16 +61,27 @@
     <div class=" col-6 d-flex align-items-center justify-content-center flex-column">
       <!-- <div class="col-6 flex-column d-flex justify-content-center border"> -->
       <h2> Expenses Tracker</h2>
-
-      <h4><img class="img-fluid" src="../anushka/185-1850441_apple-calculator-icon-ios-11-hd-png-download.png" alt=""
+      <!--   -->
+      <div class="row ">
+        <div class="col-6"><img class="img-fluid"
+            src="../anushka/185-1850441_apple-calculator-icon-ios-11-hd-png-download.png" alt="" srcset="" width="50px"
+            height="50px"></div>
+        <div class="col-6">
+          <h4>Balance</h4>
+          <h5 id="balance"> $420</h5>
+        </div>
+      </div>
+      <!-- <h4><img class="img-fluid" src="../anushka/185-1850441_apple-calculator-icon-ios-11-hd-png-download.png" alt=""
           srcset="" width="50px" height="50px"> Balance</h4>
-      <h5 id="balance"> $420</h5>
+      <h5 id="balance"> $420</h5> -->
       <div class=" card">
 
         <div class="card-body row">
-          <div class=" col-6 d-flex align-items-center justify-content-center flex-column">income
+          <div class=" col-6 d-flex align-items-center justify-content-center flex-column"
+            style="border-right:1px solid black ;">income
             <p id="money-plus" class="money plus"></p>
           </div>
+
           <div class=" col-6 d-flex align-items-center justify-content-center flex-column">Expenses
             <p id="money-minus" class="money minus"></p>
           </div>
@@ -54,8 +93,8 @@
           <hr />
       </div>
       <!--histroy list-->
-      <ul id="list" class="list">
-        <li class="_minus">
+      <ul id="list" class="list " style="list-style-type: none; width: 350px;">
+        <li class=" _minus">
           cash <span> -$200</span>
         </li>
       </ul>
@@ -69,14 +108,14 @@
         <div class="col-6 text-start py-0 ">
           <h6> Descripation</h6>
         </div>
-        <input class="form-control Descripation w-50" type="text" placeholder="Enter Descripation"
+        <input class="form-control Descripation w-300px" type="text" placeholder="Enter Descripation"
           id="Descripation" /><br>
         <div class="col-6 text-start py-0 ">
           <h6> Amount</h6>
           <P class="text-muted">(-100=expenses, 100=income)</P>
         </div>
-        <input class="form-control Amount w-50" type="text" placeholder="Enter Amount" id='amount' /><br>
-        <button type="button" class="btn w-50 " id="addButtton" onclick="addEntry()">Add Transaction</button>
+        <input class="form-control Amount w-300px" type="text" placeholder="Enter Amount" id='amount' /><br>
+        <button type="button" class="btn  " id="addButtton" onclick="addEntry()">Add Transaction</button>
 
 
     </div>
